@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.homeforsale.MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background = "@color/red"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="102dp"
+        android:text="UserID"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/button1"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="RtlHardcoded" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="39dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/editText2"
+        android:text="Password"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:text="Login"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Prescription Analytics"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+       <TextView
+           android:id="@+id/loginforgotpw"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textView3"
+           android:layout_below="@+id/button1"
+           android:layout_marginTop="37dp"
+           android:clickable="true"
+           android:onClick="onClick"
+           android:text="Forgot Password"
+           android:textColor="@color/white"
+           tools:ignore="HardcodedText" />
+
+       <TextView
+           android:id="@+id/logincreatenewaccount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/loginforgotpw"
+           android:layout_below="@+id/loginforgotpw"
+           android:layout_marginTop="32dp"
+           android:clickable="true"
+           android:onClick="onClick"
+           android:text="Create New Account"
+           android:textColor="@color/white"
+           tools:ignore="HardcodedText" />
+
+       <ImageView
+           android:id="@+id/sjsuimg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/textView3"
+           android:layout_toLeftOf="@+id/textView3"
+           android:adjustViewBounds="true"
+           android:maxHeight="42dp"
+           android:maxWidth="42dp"
+           android:src="@drawable/image"
+           tools:ignore="ContentDescription,RtlHardcoded" />
+     
+</RelativeLayout>
